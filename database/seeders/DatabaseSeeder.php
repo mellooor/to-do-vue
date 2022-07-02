@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\ToDoItem;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
+        ToDoItem::factory()->count(5)->create();
     }
 }
